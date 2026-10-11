@@ -1,0 +1,15 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "${APP_BIND:-127.0.0.1}:8000:8000"
+    volumes:
+      - sqlite-data:/data
+    environment:
+      DATABASE_URL: sqlite:////data/razryad.db
+      DEV_MODE: "false"
+      JWT_SECRET: ${JWT_SECRET:?Set JWT_SECRET in .env}
+      SEED_DEMO: ${SEED_DEMO:-false}
+volumes:
+  sqlite-data:

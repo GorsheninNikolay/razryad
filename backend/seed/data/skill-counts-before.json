@@ -1,0 +1,122 @@
+{
+  "analytics": {
+    "python": 2,
+    "postgresql": 0,
+    "docker": 2,
+    "fastapi": 1,
+    "kubernetes": 1,
+    "react": 2,
+    "typescript": 2,
+    "sql": 1,
+    "git": 3,
+    "linux": 1
+  },
+  "backend": {
+    "python": 1,
+    "postgresql": 3,
+    "docker": 0,
+    "fastapi": 2,
+    "kubernetes": 3,
+    "react": 0,
+    "typescript": 0,
+    "sql": 1,
+    "git": 1,
+    "linux": 3
+  },
+  "data-eng": {
+    "python": 0,
+    "postgresql": 1,
+    "docker": 3,
+    "fastapi": 1,
+    "kubernetes": 2,
+    "react": 1,
+    "typescript": 0,
+    "sql": 1,
+    "git": 0,
+    "linux": 4
+  },
+  "devops": {
+    "python": 1,
+    "postgresql": 1,
+    "docker": 0,
+    "fastapi": 3,
+    "kubernetes": 2,
+    "react": 2,
+    "typescript": 2,
+    "sql": 1,
+    "git": 0,
+    "linux": 0
+  },
+  "embedded": {
+    "python": 2,
+    "postgresql": 1,
+    "docker": 1,
+    "fastapi": 2,
+    "kubernetes": 2,
+    "react": 2,
+    "typescript": 2,
+    "sql": 2,
+    "git": 3,
+    "linux": 1
+  },
+  "frontend": {
+    "python": 2,
+    "postgresql": 1,
+    "docker": 0,
+    "fastapi": 0,
+    "kubernetes": 2,
+    "react": 1,
+    "typescript": 1,
+    "sql": 1,
+    "git": 2,
+    "linux": 3
+  },
+  "infosec": {
+    "python": 0,
+    "postgresql": 3,
+    "docker": 1,
+    "fastapi": 1,
+    "kubernetes": 3,
+    "react": 3,
+    "typescript": 4,
+    "sql": 2,
+    "git": 2,
+    "linux": 1
+  },
+  "ml": {
+    "python": 0,
+    "postgresql": 1,
+    "docker": 2,
+    "fastapi": 2,
+    "kubernetes": 2,
+    "react": 0,
+    "typescript": 0,
+    "sql": 0,
+    "git": 1,
+    "linux": 0
+  },
+  "mobile": {
+    "python": 0,
+    "postgresql": 0,
+    "docker": 2,
+    "fastapi": 4,
+    "kubernetes": 1,
+    "react": 1,
+    "typescript": 3,
+    "sql": 0,
+    "git": 1,
+    "linux": 0
+  },
+  "qa": {
+    "python": 1,
+    "postgresql": 1,
+    "docker": 2,
+    "fastapi": 2,
+    "kubernetes": 1,
+    "react": 1,
+    "typescript": 2,
+    "sql": 0,
+    "git": 1,
+    "linux": 0
+  }
+}

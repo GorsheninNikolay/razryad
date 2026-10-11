@@ -1,0 +1,19 @@
+[Unit]
+Description=RAZRYAD FINAL6 web application
+After=network.target
+[Service]
+User=razryad-final6
+Group=razryad-final6
+WorkingDirectory=/opt/razryad-final6/current/backend
+EnvironmentFile=/opt/razryad-final6/app.env
+ExecStart=/opt/razryad-final6/current/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 18006 --proxy-headers --forwarded-allow-ips=127.0.0.1
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/razryad-final6
+UMask=0077
+[Install]
+WantedBy=multi-user.target

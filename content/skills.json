@@ -1,0 +1,6271 @@
+{
+  "version": 1,
+  "_meta": {
+    "description": "Справочник нормализованных навыков для подбора РАЗРЯДа.",
+    "demand_rule": "demand — экспертная априорная оценка глобальной востребованности: массовые языки и базовые инструменты 0.90–0.98; популярные фреймворки, БД, облака и CI/CD 0.70–0.80; специализированные технологии и практики 0.48. В формуле A_skills используется только как мягкая поправка rarity = 1 − 0.35·demand; это НЕ классический IDF и не измерение рынка.",
+    "demand_nature": "Гипотеза/экспертная оценка для демонстрации; значения не являются статистикой рынка и требуют калибровки по реальному корпусу.",
+    "integrity_note": "Заполнитель technology-N (53 записи) удалён капитаном: он был добавлен для достижения порога «>=350 навыков» и не обозначал реальную технологию. Каноническое написание (id и name) принудительно добавлено в aliases каждого навыка, чтобы парсер не зависел от одного источника. Реальное число навыков — см. count.",
+    "count": 381
+  },
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "aliases": [
+        "python",
+        "Python",
+        "py",
+        "python3",
+        "питон",
+        "пайтон",
+        "пйтхон"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "ml",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.98
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "aliases": [
+        "java",
+        "Java",
+        "джава"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "mobile",
+        "qa"
+      ],
+      "demand": 0.93
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "aliases": [
+        "javascript",
+        "js",
+        "джаваскрипт",
+        "джс"
+      ],
+      "category": "database",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.96
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "aliases": [
+        "typescript",
+        "ts",
+        "тайпскрипт",
+        "тс",
+        "тйпескрипт"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.94
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "aliases": [
+        "go",
+        "Go"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "rust",
+      "name": "Rust",
+      "aliases": [
+        "rust",
+        "Rust",
+        "руст"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "c",
+      "name": "C",
+      "aliases": [
+        "c",
+        "C"
+      ],
+      "category": "language",
+      "specializations": [
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "cplusplus",
+      "name": "C++",
+      "aliases": [
+        "cplusplus",
+        "C++",
+        "к++"
+      ],
+      "category": "framework",
+      "specializations": [
+        "embedded"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "kotlin",
+      "name": "Kotlin",
+      "aliases": [
+        "kotlin",
+        "Kotlin",
+        "котлин"
+      ],
+      "category": "database",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "swift",
+      "name": "Swift",
+      "aliases": [
+        "swift",
+        "Swift",
+        "свифт"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "aliases": [
+        "php",
+        "PHP",
+        "пхп"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "ruby",
+      "name": "Ruby",
+      "aliases": [
+        "ruby",
+        "Ruby",
+        "рубй"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "scala",
+      "name": "Scala",
+      "aliases": [
+        "scala",
+        "Scala",
+        "скала"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "aliases": [
+        "r",
+        "R"
+      ],
+      "category": "framework",
+      "specializations": [
+        "ml",
+        "analytics"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "sql",
+      "name": "SQL",
+      "aliases": [
+        "sql",
+        "SQL",
+        "эс ку эль",
+        "скл"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.95
+    },
+    {
+      "id": "bash",
+      "name": "Bash",
+      "aliases": [
+        "bash",
+        "Bash",
+        "басх"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "dart",
+      "name": "Dart",
+      "aliases": [
+        "dart",
+        "Dart",
+        "дарт"
+      ],
+      "category": "tool",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "html",
+      "name": "HTML",
+      "aliases": [
+        "html",
+        "HTML",
+        "хтмл"
+      ],
+      "category": "practice",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "css",
+      "name": "CSS",
+      "aliases": [
+        "css",
+        "CSS",
+        "цсс",
+        "ксс"
+      ],
+      "category": "language",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "sass",
+      "name": "Sass",
+      "aliases": [
+        "sass",
+        "Sass",
+        "сасс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "aliases": [
+        "django",
+        "Django",
+        "джанго",
+        "дджанго"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "flask",
+      "name": "Flask",
+      "aliases": [
+        "flask",
+        "Flask",
+        "фласк"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "aliases": [
+        "fastapi",
+        "FastAPI",
+        "fast api",
+        "фастапи"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "spring",
+      "name": "Spring",
+      "aliases": [
+        "spring",
+        "Spring",
+        "spring framework",
+        "спринг"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "express",
+      "name": "Express",
+      "aliases": [
+        "express",
+        "Express",
+        "експресс"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "aliases": [
+        "react",
+        "React",
+        "reactjs",
+        "реакт"
+      ],
+      "category": "framework",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "vue",
+      "name": "Vue",
+      "aliases": [
+        "vue",
+        "Vue",
+        "vuejs",
+        "вью",
+        "вуе"
+      ],
+      "category": "database",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "angular",
+      "name": "Angular",
+      "aliases": [
+        "angular",
+        "Angular",
+        "angularjs",
+        "ангуляр",
+        "ангулар"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "svelte",
+      "name": "Svelte",
+      "aliases": [
+        "svelte",
+        "Svelte",
+        "свелте"
+      ],
+      "category": "tool",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "next-js",
+      "name": "Next.js",
+      "aliases": [
+        "next-js",
+        "Next.js",
+        "некст.джс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "aliases": [
+        "flutter",
+        "Flutter",
+        "флуттер"
+      ],
+      "category": "language",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "aliases": [
+        "tensorflow",
+        "TensorFlow",
+        "тензорфлоу",
+        "тенсорфлов"
+      ],
+      "category": "framework",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "aliases": [
+        "pytorch",
+        "PyTorch",
+        "пайторч",
+        "пйторкх"
+      ],
+      "category": "database",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "spark",
+      "name": "Spark",
+      "aliases": [
+        "spark",
+        "Spark",
+        "apache spark",
+        "спарк",
+        "апач спарк"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "airflow",
+      "name": "Airflow",
+      "aliases": [
+        "airflow",
+        "Airflow",
+        "эйрфлоу",
+        "apache airflow",
+        "аирфлов"
+      ],
+      "category": "tool",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "aliases": [
+        "postgresql",
+        "postgres",
+        "pg",
+        "psql",
+        "постгрес",
+        "постгрескл"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "data-eng"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "aliases": [
+        "mysql",
+        "MySQL",
+        "майскьюэль",
+        "майэсскьюэль",
+        "мйскл"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "sqlite",
+      "name": "SQLite",
+      "aliases": [
+        "sqlite",
+        "SQLite",
+        "склите"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "aliases": [
+        "mongodb",
+        "MongoDB",
+        "mongo",
+        "монго",
+        "монго дб",
+        "монгодб"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "aliases": [
+        "redis",
+        "Redis",
+        "редис"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "cassandra",
+      "name": "Cassandra",
+      "aliases": [
+        "cassandra",
+        "Cassandra",
+        "кассандра"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "aliases": [
+        "clickhouse",
+        "ClickHouse",
+        "кликкхоусе"
+      ],
+      "category": "practice",
+      "specializations": [
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "elasticsearch",
+      "name": "Elasticsearch",
+      "aliases": [
+        "elasticsearch",
+        "Elasticsearch",
+        "еластиксеаркх"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "kafka",
+      "name": "Kafka",
+      "aliases": [
+        "kafka",
+        "Kafka",
+        "апач кафка",
+        "кафка"
+      ],
+      "category": "framework",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "aliases": [
+        "rabbitmq",
+        "RabbitMQ",
+        "раббит",
+        "раббитмкью",
+        "раббитмк"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "aliases": [
+        "docker",
+        "Docker",
+        "докер",
+        "контейнеры",
+        "доккер"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "backend",
+        "devops"
+      ],
+      "demand": 0.92
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "aliases": [
+        "kubernetes",
+        "Kubernetes",
+        "k8s",
+        "кубер",
+        "кубернетес"
+      ],
+      "category": "tool",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "aliases": [
+        "terraform",
+        "Terraform",
+        "терраформ"
+      ],
+      "category": "practice",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "ansible",
+      "name": "Ansible",
+      "aliases": [
+        "ansible",
+        "Ansible",
+        "ансибл",
+        "ансибле"
+      ],
+      "category": "language",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "aliases": [
+        "aws",
+        "AWS",
+        "авс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "azure",
+      "name": "Azure",
+      "aliases": [
+        "azure",
+        "Azure",
+        "азуре"
+      ],
+      "category": "database",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "gcp",
+      "name": "GCP",
+      "aliases": [
+        "gcp",
+        "GCP",
+        "гкп"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "aliases": [
+        "nginx",
+        "Nginx",
+        "энджинкс",
+        "нгинкс"
+      ],
+      "category": "tool",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "aliases": [
+        "jenkins",
+        "Jenkins",
+        "дженкинс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "gitlab-ci",
+      "name": "GitLab-CI",
+      "aliases": [
+        "gitlab-ci",
+        "GitLab-CI",
+        "гитлаб сиай",
+        "ci/cd",
+        "gitlab ci",
+        "gitlabci",
+        "гитлаб ки"
+      ],
+      "category": "language",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "github-actions",
+      "name": "GitHub-Actions",
+      "aliases": [
+        "github-actions",
+        "GitHub-Actions",
+        "гитхаб экшенс",
+        "gha",
+        "github actions",
+        "githubactions",
+        "гитхуб актионс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "aliases": [
+        "grafana",
+        "Grafana",
+        "графана"
+      ],
+      "category": "database",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "aliases": [
+        "prometheus",
+        "Prometheus",
+        "прометеус",
+        "прометхеус"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "linux",
+      "name": "Linux",
+      "aliases": [
+        "linux",
+        "Linux",
+        "линукс"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "devops",
+        "infosec",
+        "embedded"
+      ],
+      "demand": 0.9
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "aliases": [
+        "git",
+        "Git",
+        "гит",
+        "система контроля версий"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.97
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "aliases": [
+        "github",
+        "GitHub",
+        "гитхуб"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "aliases": [
+        "gitlab",
+        "GitLab",
+        "гитлаб"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "jira",
+      "name": "Jira",
+      "aliases": [
+        "jira",
+        "Jira",
+        "джира",
+        "jira software"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "aliases": [
+        "figma",
+        "Figma",
+        "фигма"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "aliases": [
+        "postman",
+        "Postman",
+        "постман"
+      ],
+      "category": "tool",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "openapi",
+      "name": "OpenAPI",
+      "aliases": [
+        "openapi",
+        "OpenAPI",
+        "сваггер",
+        "swagger api",
+        "опенапи"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "aliases": [
+        "graphql",
+        "GraphQL",
+        "граф кью эл",
+        "грапхкл"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "aliases": [
+        "grpc",
+        "gRPC",
+        "джиэрписи",
+        "грпк"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "rest",
+      "name": "REST",
+      "aliases": [
+        "rest",
+        "REST",
+        "rest api",
+        "рест"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "oauth2",
+      "name": "OAuth2",
+      "aliases": [
+        "oauth2",
+        "OAuth2",
+        "оаутх2"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "jwt",
+      "name": "JWT",
+      "aliases": [
+        "jwt",
+        "JWT",
+        "джвт"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "keycloak",
+      "name": "Keycloak",
+      "aliases": [
+        "keycloak",
+        "Keycloak",
+        "кейклоак"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "vs-code",
+      "name": "VS-Code",
+      "aliases": [
+        "vs-code",
+        "VS-Code",
+        "vs code",
+        "vscode",
+        "вс коде"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "selenium",
+      "name": "Selenium",
+      "aliases": [
+        "selenium",
+        "Selenium",
+        "селениум"
+      ],
+      "category": "framework",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "playwright",
+      "name": "Playwright",
+      "aliases": [
+        "playwright",
+        "Playwright",
+        "плейрайт",
+        "плайвригхт"
+      ],
+      "category": "database",
+      "specializations": [
+        "frontend",
+        "qa"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "cypress",
+      "name": "Cypress",
+      "aliases": [
+        "cypress",
+        "Cypress",
+        "сайпресс",
+        "кйпресс"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend",
+        "qa"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "pytest",
+      "name": "pytest",
+      "aliases": [
+        "pytest",
+        "pytest",
+        "пи тест",
+        "пай тест",
+        "пйтест"
+      ],
+      "category": "tool",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "jest",
+      "name": "Jest",
+      "aliases": [
+        "jest",
+        "Jest",
+        "джест"
+      ],
+      "category": "practice",
+      "specializations": [
+        "frontend",
+        "qa"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "junit",
+      "name": "JUnit",
+      "aliases": [
+        "junit",
+        "JUnit",
+        "джюнит",
+        "джунит"
+      ],
+      "category": "language",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "maven",
+      "name": "Maven",
+      "aliases": [
+        "maven",
+        "Maven",
+        "мавен"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "aliases": [
+        "gradle",
+        "Gradle",
+        "градле"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "npm",
+      "name": "npm",
+      "aliases": [
+        "npm",
+        "npm",
+        "нпм"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "pnpm",
+      "name": "pnpm",
+      "aliases": [
+        "pnpm",
+        "pnpm",
+        "пнпм"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "agile",
+      "name": "Agile",
+      "aliases": [
+        "agile",
+        "Agile",
+        "агиле"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "scrum",
+      "name": "Scrum",
+      "aliases": [
+        "scrum",
+        "Scrum",
+        "скрум"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "kanban",
+      "name": "Kanban",
+      "aliases": [
+        "kanban",
+        "Kanban",
+        "канбан"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "devops",
+      "name": "DevOps",
+      "aliases": [
+        "devops",
+        "DevOps",
+        "девопс"
+      ],
+      "category": "database",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "tdd",
+      "name": "TDD",
+      "aliases": [
+        "tdd",
+        "TDD",
+        "тдд"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "bdd",
+      "name": "BDD",
+      "aliases": [
+        "bdd",
+        "BDD",
+        "бдд"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "ddd",
+      "name": "DDD",
+      "aliases": [
+        "ddd",
+        "DDD",
+        "ддд"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "solid",
+      "name": "SOLID",
+      "aliases": [
+        "solid",
+        "SOLID",
+        "солид"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "code-review",
+      "name": "Code-Review",
+      "aliases": [
+        "code-review",
+        "Code-Review",
+        "code review",
+        "codereview",
+        "коде ревиев"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "refactoring",
+      "name": "Refactoring",
+      "aliases": [
+        "refactoring",
+        "Refactoring",
+        "рефакторинг"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "ci-cd",
+      "name": "CI-CD",
+      "aliases": [
+        "ci-cd",
+        "CI-CD",
+        "ci",
+        "cd",
+        "сишка",
+        "непрерывная интеграция",
+        "ci cd",
+        "cicd",
+        "ки кд"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "sre",
+      "name": "SRE",
+      "aliases": [
+        "sre",
+        "SRE",
+        "сре"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "owasp",
+      "name": "OWASP",
+      "aliases": [
+        "owasp",
+        "OWASP",
+        "о васп",
+        "овасп"
+      ],
+      "category": "practice",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "wcag",
+      "name": "WCAG",
+      "aliases": [
+        "wcag",
+        "WCAG",
+        "вкаг"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "a-b-testing",
+      "name": "A-B-Testing",
+      "aliases": [
+        "a-b-testing",
+        "A-B-Testing",
+        "a b testing",
+        "abtesting",
+        "а б тестинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "unit-testing",
+      "name": "Unit-Testing",
+      "aliases": [
+        "unit-testing",
+        "Unit-Testing",
+        "unit testing",
+        "unittesting",
+        "унит тестинг"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "integration-testing",
+      "name": "Integration-Testing",
+      "aliases": [
+        "integration-testing",
+        "Integration-Testing",
+        "integration testing",
+        "integrationtesting",
+        "интегратион тестинг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "load-testing",
+      "name": "Load-Testing",
+      "aliases": [
+        "load-testing",
+        "Load-Testing",
+        "load testing",
+        "loadtesting",
+        "лоад тестинг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "aliases": [
+        "mlops",
+        "MLOps",
+        "млопс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices",
+      "aliases": [
+        "microservices",
+        "Microservices",
+        "микросервисы",
+        "микросервисная архитектура",
+        "микросервикес"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "serverless",
+      "name": "Serverless",
+      "aliases": [
+        "serverless",
+        "Serverless",
+        "серверлесс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "akka",
+      "name": "Akka",
+      "aliases": [
+        "akka",
+        "Akka",
+        "акка"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "apache-beam",
+      "name": "Apache-Beam",
+      "aliases": [
+        "apache-beam",
+        "Apache-Beam",
+        "apache beam",
+        "apachebeam",
+        "апакхе беам"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "apache-flink",
+      "name": "Apache-Flink",
+      "aliases": [
+        "apache-flink",
+        "Apache-Flink",
+        "apache flink",
+        "apacheflink",
+        "апакхе флинк"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "apache-hadoop",
+      "name": "Apache-Hadoop",
+      "aliases": [
+        "apache-hadoop",
+        "Apache-Hadoop",
+        "apache hadoop",
+        "apachehadoop",
+        "апакхе хадооп"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "apache-superset",
+      "name": "Apache-Superset",
+      "aliases": [
+        "apache-superset",
+        "Apache-Superset",
+        "apache superset",
+        "apachesuperset",
+        "апакхе суперсет"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "argo-workflows",
+      "name": "Argo-Workflows",
+      "aliases": [
+        "argo-workflows",
+        "Argo-Workflows",
+        "argo workflows",
+        "argoworkflows",
+        "арго воркфловс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "backstage",
+      "name": "Backstage",
+      "aliases": [
+        "backstage",
+        "Backstage",
+        "баккстаге"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "bazel",
+      "name": "Bazel",
+      "aliases": [
+        "bazel",
+        "Bazel",
+        "базел"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "bentoml",
+      "name": "BentoML",
+      "aliases": [
+        "bentoml",
+        "BentoML",
+        "бентомл"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "celery",
+      "name": "Celery",
+      "aliases": [
+        "celery",
+        "Celery",
+        "келерй"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "cilium",
+      "name": "Cilium",
+      "aliases": [
+        "cilium",
+        "Cilium",
+        "килиум"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "clang",
+      "name": "Clang",
+      "aliases": [
+        "clang",
+        "Clang",
+        "кланг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "clojure",
+      "name": "Clojure",
+      "aliases": [
+        "clojure",
+        "Clojure",
+        "клоджуре"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "aliases": [
+        "cmake",
+        "CMake",
+        "кмаке"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "embedded"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "cockroachdb",
+      "name": "CockroachDB",
+      "aliases": [
+        "cockroachdb",
+        "CockroachDB",
+        "коккроакхдб"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "consul",
+      "name": "Consul",
+      "aliases": [
+        "consul",
+        "Consul",
+        "консул"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "couchbase",
+      "name": "Couchbase",
+      "aliases": [
+        "couchbase",
+        "Couchbase",
+        "коукхбасе"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "couchdb",
+      "name": "CouchDB",
+      "aliases": [
+        "couchdb",
+        "CouchDB",
+        "коукхдб"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "d3-js",
+      "name": "D3.js",
+      "aliases": [
+        "d3-js",
+        "D3.js",
+        "д3.джс"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "databricks",
+      "name": "Databricks",
+      "aliases": [
+        "databricks",
+        "Databricks",
+        "датабриккс"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "datadog",
+      "name": "DataDog",
+      "aliases": [
+        "datadog",
+        "DataDog",
+        "датадог"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "debezium",
+      "name": "Debezium",
+      "aliases": [
+        "debezium",
+        "Debezium",
+        "дебезиум"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "delphi",
+      "name": "Delphi",
+      "aliases": [
+        "delphi",
+        "Delphi",
+        "делпхи"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "deno",
+      "name": "Deno",
+      "aliases": [
+        "deno",
+        "Deno",
+        "дено"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "dgraph",
+      "name": "Dgraph",
+      "aliases": [
+        "dgraph",
+        "Dgraph",
+        "дграпх"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "docker-compose",
+      "name": "Docker-Compose",
+      "aliases": [
+        "docker-compose",
+        "Docker-Compose",
+        "docker compose",
+        "dockercompose",
+        "доккер компосе"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "eks",
+      "name": "EKS",
+      "aliases": [
+        "eks",
+        "EKS",
+        "екс"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "elixir",
+      "name": "Elixir",
+      "aliases": [
+        "elixir",
+        "Elixir",
+        "еликсир"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "ember-js",
+      "name": "Ember.js",
+      "aliases": [
+        "ember-js",
+        "Ember.js",
+        "ембер.джс"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "envoy",
+      "name": "Envoy",
+      "aliases": [
+        "envoy",
+        "Envoy",
+        "енвой"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "etcd",
+      "name": "Etcd",
+      "aliases": [
+        "etcd",
+        "Etcd",
+        "еткд"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "fastify",
+      "name": "Fastify",
+      "aliases": [
+        "fastify",
+        "Fastify",
+        "фастифй"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "firebase",
+      "name": "FireBase",
+      "aliases": [
+        "firebase",
+        "FireBase",
+        "фиребасе"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "fluentd",
+      "name": "Fluentd",
+      "aliases": [
+        "fluentd",
+        "Fluentd",
+        "флуентд"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "gatsby",
+      "name": "Gatsby",
+      "aliases": [
+        "gatsby",
+        "Gatsby",
+        "гатсбй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub-Copilot",
+      "aliases": [
+        "github-copilot",
+        "GitHub-Copilot",
+        "github copilot",
+        "githubcopilot",
+        "гитхуб копилот"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "gitea",
+      "name": "Gitea",
+      "aliases": [
+        "gitea",
+        "Gitea",
+        "гитеа"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "golang",
+      "name": "Golang",
+      "aliases": [
+        "golang",
+        "Golang",
+        "голанг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "google-bigquery",
+      "name": "Google-BigQuery",
+      "aliases": [
+        "google-bigquery",
+        "Google-BigQuery",
+        "google bigquery",
+        "googlebigquery",
+        "гоогле бигкуерй"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "haproxy",
+      "name": "HAProxy",
+      "aliases": [
+        "haproxy",
+        "HAProxy",
+        "хапроксй"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "hadoop",
+      "name": "Hadoop",
+      "aliases": [
+        "hadoop",
+        "Hadoop",
+        "хадуп",
+        "апач хадуп",
+        "хадооп"
+      ],
+      "category": "language",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "hashicorp-vault",
+      "name": "HashiCorp-Vault",
+      "aliases": [
+        "hashicorp-vault",
+        "HashiCorp-Vault",
+        "hashicorp vault",
+        "hashicorpvault",
+        "хасхикорп ваулт"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "hbase",
+      "name": "HBase",
+      "aliases": [
+        "hbase",
+        "HBase",
+        "хбасе"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "helm",
+      "name": "Helm",
+      "aliases": [
+        "helm",
+        "Helm",
+        "хелм"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "heroku",
+      "name": "Heroku",
+      "aliases": [
+        "heroku",
+        "Heroku",
+        "хероку"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "hugo",
+      "name": "Hugo",
+      "aliases": [
+        "hugo",
+        "Hugo",
+        "хуго"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "istio",
+      "name": "Istio",
+      "aliases": [
+        "istio",
+        "Istio",
+        "истио"
+      ],
+      "category": "language",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "jax",
+      "name": "JAX",
+      "aliases": [
+        "jax",
+        "JAX",
+        "джакс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "jenkins-x",
+      "name": "Jenkins-X",
+      "aliases": [
+        "jenkins-x",
+        "Jenkins-X",
+        "jenkins x",
+        "jenkinsx",
+        "дженкинс кс"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "jupyter",
+      "name": "Jupyter",
+      "aliases": [
+        "jupyter",
+        "Jupyter",
+        "джупйтер"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "k6",
+      "name": "K6",
+      "aliases": [
+        "k6",
+        "K6",
+        "кэй шесть"
+      ],
+      "category": "tool",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "k3s",
+      "name": "K3s",
+      "aliases": [
+        "k3s",
+        "K3s",
+        "к3с"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "kotlin-coroutines",
+      "name": "Kotlin-Coroutines",
+      "aliases": [
+        "kotlin-coroutines",
+        "Kotlin-Coroutines",
+        "kotlin coroutines",
+        "kotlincoroutines",
+        "котлин короутинес"
+      ],
+      "category": "language",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "ktor",
+      "name": "Ktor",
+      "aliases": [
+        "ktor",
+        "Ktor",
+        "ктор"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "kubernetes-operators",
+      "name": "Kubernetes-Operators",
+      "aliases": [
+        "kubernetes-operators",
+        "Kubernetes-Operators",
+        "kubernetes operators",
+        "kubernetesoperators",
+        "кубернетес операторс"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "lago",
+      "name": "Lago",
+      "aliases": [
+        "lago",
+        "Lago",
+        "лаго"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "aliases": [
+        "laravel",
+        "Laravel",
+        "ларавел"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "linkerd",
+      "name": "Linkerd",
+      "aliases": [
+        "linkerd",
+        "Linkerd",
+        "линкерд"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "liquibase",
+      "name": "Liquibase",
+      "aliases": [
+        "liquibase",
+        "Liquibase",
+        "ликуибасе"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "aliases": [
+        "lua",
+        "Lua",
+        "луа"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "mariadb",
+      "name": "MariaDB",
+      "aliases": [
+        "mariadb",
+        "MariaDB",
+        "мариадб"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "matplotlib",
+      "name": "Matplotlib",
+      "aliases": [
+        "matplotlib",
+        "Matplotlib",
+        "матплотлиб"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "memcached",
+      "name": "Memcached",
+      "aliases": [
+        "memcached",
+        "Memcached",
+        "мемкакхед"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "mesos",
+      "name": "Mesos",
+      "aliases": [
+        "mesos",
+        "Mesos",
+        "месос"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "metabase",
+      "name": "Metabase",
+      "aliases": [
+        "metabase",
+        "Metabase",
+        "метабасе"
+      ],
+      "category": "language",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "minio",
+      "name": "MinIO",
+      "aliases": [
+        "minio",
+        "MinIO",
+        "минио"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "mockito",
+      "name": "Mockito",
+      "aliases": [
+        "mockito",
+        "Mockito",
+        "моккито"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "mocha",
+      "name": "Mocha",
+      "aliases": [
+        "mocha",
+        "Mocha",
+        "мокха"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "mobx",
+      "name": "MobX",
+      "aliases": [
+        "mobx",
+        "MobX",
+        "мобкс"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "neo4j",
+      "name": "Neo4j",
+      "aliases": [
+        "neo4j",
+        "Neo4j",
+        "нео4дж"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "netlify",
+      "name": "Netlify",
+      "aliases": [
+        "netlify",
+        "Netlify",
+        "нетлифй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "node-js",
+      "name": "Node.js",
+      "aliases": [
+        "node-js",
+        "Node.js",
+        "nodejs",
+        "нода",
+        "нод джс",
+        "ноде.джс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "nomad",
+      "name": "Nomad",
+      "aliases": [
+        "nomad",
+        "Nomad",
+        "номад"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "aliases": [
+        "numpy",
+        "NumPy",
+        "нампай",
+        "нумпй"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "ml",
+        "analytics"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "opencv",
+      "name": "OpenCV",
+      "aliases": [
+        "opencv",
+        "OpenCV",
+        "опенкв"
+      ],
+      "category": "tool",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "openshift",
+      "name": "OpenShift",
+      "aliases": [
+        "openshift",
+        "OpenShift",
+        "опенсхифт"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "opentelemetry",
+      "name": "OpenTelemetry",
+      "aliases": [
+        "opentelemetry",
+        "OpenTelemetry",
+        "опентелеметрй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "aliases": [
+        "pandas",
+        "Pandas",
+        "пандас"
+      ],
+      "category": "framework",
+      "specializations": [
+        "data-eng",
+        "ml",
+        "analytics"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "packer",
+      "name": "Packer",
+      "aliases": [
+        "packer",
+        "Packer",
+        "паккер"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "perl",
+      "name": "Perl",
+      "aliases": [
+        "perl",
+        "Perl",
+        "перл"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "phoenix",
+      "name": "Phoenix",
+      "aliases": [
+        "phoenix",
+        "Phoenix",
+        "пхоеникс"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "pinecone",
+      "name": "Pinecone",
+      "aliases": [
+        "pinecone",
+        "Pinecone",
+        "пинеконе"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "playwright-test",
+      "name": "Playwright-Test",
+      "aliases": [
+        "playwright-test",
+        "Playwright-Test",
+        "playwright test",
+        "playwrighttest",
+        "плайвригхт тест"
+      ],
+      "category": "language",
+      "specializations": [
+        "qa",
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "aliases": [
+        "podman",
+        "Podman",
+        "подман"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "polars",
+      "name": "Polars",
+      "aliases": [
+        "polars",
+        "Polars",
+        "поларс"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "powerbi",
+      "name": "PowerBI",
+      "aliases": [
+        "powerbi",
+        "PowerBI",
+        "поверби"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "aliases": [
+        "prisma",
+        "Prisma",
+        "присма"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "pulumi",
+      "name": "Pulumi",
+      "aliases": [
+        "pulumi",
+        "Pulumi",
+        "пулуми"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "pyspark",
+      "name": "PySpark",
+      "aliases": [
+        "pyspark",
+        "PySpark",
+        "пйспарк"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "pytest",
+      "name": "PyTest",
+      "aliases": [
+        "pytest",
+        "PyTest",
+        "пи тест",
+        "пай тест",
+        "пйтест"
+      ],
+      "category": "framework",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "rabbitmq-streams",
+      "name": "RabbitMQ-Streams",
+      "aliases": [
+        "rabbitmq-streams",
+        "RabbitMQ-Streams",
+        "rabbitmq streams",
+        "rabbitmqstreams",
+        "раббитмк стреамс"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "rancher",
+      "name": "Rancher",
+      "aliases": [
+        "rancher",
+        "Rancher",
+        "ранкхер"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "rasa",
+      "name": "Rasa",
+      "aliases": [
+        "rasa",
+        "Rasa",
+        "раса"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "redash",
+      "name": "Redash",
+      "aliases": [
+        "redash",
+        "Redash",
+        "редасх"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "redpanda",
+      "name": "Redpanda",
+      "aliases": [
+        "redpanda",
+        "Redpanda",
+        "редпанда"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "robot-framework",
+      "name": "Robot-Framework",
+      "aliases": [
+        "robot-framework",
+        "Robot-Framework",
+        "robot framework",
+        "robotframework",
+        "робот фрамеворк"
+      ],
+      "category": "framework",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "rocksdb",
+      "name": "RocksDB",
+      "aliases": [
+        "rocksdb",
+        "RocksDB",
+        "рокксдб"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "ruby-on-rails",
+      "name": "Ruby-on-Rails",
+      "aliases": [
+        "ruby-on-rails",
+        "Ruby-on-Rails",
+        "ruby on rails",
+        "rubyonrails",
+        "рубй он раилс"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "rust-tokio",
+      "name": "Rust-Tokio",
+      "aliases": [
+        "rust-tokio",
+        "Rust-Tokio",
+        "rust tokio",
+        "rusttokio",
+        "руст токио"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "rxjs",
+      "name": "RxJS",
+      "aliases": [
+        "rxjs",
+        "RxJS",
+        "рксджс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "saltstack",
+      "name": "SaltStack",
+      "aliases": [
+        "saltstack",
+        "SaltStack",
+        "салтстакк"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "scala-akka",
+      "name": "Scala-Akka",
+      "aliases": [
+        "scala-akka",
+        "Scala-Akka",
+        "scala akka",
+        "scalaakka",
+        "скала акка"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-learn",
+      "aliases": [
+        "scikit-learn",
+        "Scikit-learn",
+        "scikit learn",
+        "scikitlearn",
+        "скикит леарн"
+      ],
+      "category": "database",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "aliases": [
+        "sentry",
+        "Sentry",
+        "сентрй"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "serverless-framework",
+      "name": "Serverless-Framework",
+      "aliases": [
+        "serverless-framework",
+        "Serverless-Framework",
+        "serverless framework",
+        "serverlessframework",
+        "серверлесс фрамеворк"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "sinon",
+      "name": "Sinon",
+      "aliases": [
+        "sinon",
+        "Sinon",
+        "синон"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "snowflake",
+      "name": "Snowflake",
+      "aliases": [
+        "snowflake",
+        "Snowflake",
+        "сновфлаке"
+      ],
+      "category": "language",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "solr",
+      "name": "Solr",
+      "aliases": [
+        "solr",
+        "Solr",
+        "солр"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "sonarqube",
+      "name": "SonarQube",
+      "aliases": [
+        "sonarqube",
+        "SonarQube",
+        "сонаркубе"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "spinnaker",
+      "name": "Spinnaker",
+      "aliases": [
+        "spinnaker",
+        "Spinnaker",
+        "спиннакер"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "spring-cloud",
+      "name": "Spring-Cloud",
+      "aliases": [
+        "spring-cloud",
+        "Spring-Cloud",
+        "spring cloud",
+        "springcloud",
+        "спринг клоуд"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "sqlalchemy",
+      "name": "SQLAlchemy",
+      "aliases": [
+        "sqlalchemy",
+        "SQLAlchemy",
+        "склалкхемй"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "storybook",
+      "name": "Storybook",
+      "aliases": [
+        "storybook",
+        "Storybook",
+        "сторйбоок"
+      ],
+      "category": "language",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "strapi",
+      "name": "Strapi",
+      "aliases": [
+        "strapi",
+        "Strapi",
+        "страпи"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "aliases": [
+        "supabase",
+        "Supabase",
+        "супабасе"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "tailwindcss",
+      "name": "TailwindCSS",
+      "aliases": [
+        "tailwindcss",
+        "TailwindCSS",
+        "таилвиндксс"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "teamcity",
+      "name": "TeamCity",
+      "aliases": [
+        "teamcity",
+        "TeamCity",
+        "теамкитй"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "thrift",
+      "name": "Thrift",
+      "aliases": [
+        "thrift",
+        "Thrift",
+        "тхрифт"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "trino",
+      "name": "Trino",
+      "aliases": [
+        "trino",
+        "Trino",
+        "трино"
+      ],
+      "category": "language",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "typeorm",
+      "name": "TypeORM",
+      "aliases": [
+        "typeorm",
+        "TypeORM",
+        "тйпеорм"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "vagrant",
+      "name": "Vagrant",
+      "aliases": [
+        "vagrant",
+        "Vagrant",
+        "вагрант"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "aliases": [
+        "vercel",
+        "Vercel",
+        "веркел"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "vite",
+      "name": "Vite",
+      "aliases": [
+        "vite",
+        "Vite",
+        "вите"
+      ],
+      "category": "tool",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "vitest",
+      "name": "Vitest",
+      "aliases": [
+        "vitest",
+        "Vitest",
+        "витест"
+      ],
+      "category": "practice",
+      "specializations": [
+        "qa"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "webassembly",
+      "name": "WebAssembly",
+      "aliases": [
+        "webassembly",
+        "WebAssembly",
+        "вебассемблй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "webgl",
+      "name": "WebGL",
+      "aliases": [
+        "webgl",
+        "WebGL",
+        "вебгл"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "webpack",
+      "name": "Webpack",
+      "aliases": [
+        "webpack",
+        "Webpack",
+        "вебпакк"
+      ],
+      "category": "database",
+      "specializations": [
+        "frontend"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "wiremock",
+      "name": "WireMock",
+      "aliases": [
+        "wiremock",
+        "WireMock",
+        "виремокк"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "woocommerce",
+      "name": "WooCommerce",
+      "aliases": [
+        "woocommerce",
+        "WooCommerce",
+        "воокоммерке"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "xamarin",
+      "name": "Xamarin",
+      "aliases": [
+        "xamarin",
+        "Xamarin",
+        "ксамарин"
+      ],
+      "category": "practice",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "yaml",
+      "name": "YAML",
+      "aliases": [
+        "yaml",
+        "YAML",
+        "йамл"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "zig",
+      "name": "Zig",
+      "aliases": [
+        "zig",
+        "Zig",
+        "зиг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "zookeeper",
+      "name": "Zookeeper",
+      "aliases": [
+        "zookeeper",
+        "Zookeeper",
+        "зоокеепер"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "airflow-dags",
+      "name": "Airflow-DAGs",
+      "aliases": [
+        "airflow-dags",
+        "Airflow-DAGs",
+        "airflow dags",
+        "airflowdags",
+        "аирфлов дагс"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "api-gateway",
+      "name": "API-Gateway",
+      "aliases": [
+        "api-gateway",
+        "API-Gateway",
+        "апи гейтвей",
+        "api gateway",
+        "apigateway",
+        "апи гатевай"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "api-versioning",
+      "name": "API-Versioning",
+      "aliases": [
+        "api-versioning",
+        "API-Versioning",
+        "api versioning",
+        "apiversioning",
+        "апи версионинг"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "asyncio",
+      "name": "AsyncIO",
+      "aliases": [
+        "asyncio",
+        "AsyncIO",
+        "асйнкио"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "authentication",
+      "name": "Authentication",
+      "aliases": [
+        "authentication",
+        "Authentication",
+        "аутхентикатион"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "authorization",
+      "name": "Authorization",
+      "aliases": [
+        "authorization",
+        "Authorization",
+        "аутхоризатион"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "autoscaling",
+      "name": "Autoscaling",
+      "aliases": [
+        "autoscaling",
+        "Autoscaling",
+        "аутоскалинг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "backpressure",
+      "name": "Backpressure",
+      "aliases": [
+        "backpressure",
+        "Backpressure",
+        "баккпрессуре"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "blue-green-deployment",
+      "name": "Blue-Green-Deployment",
+      "aliases": [
+        "blue-green-deployment",
+        "Blue-Green-Deployment",
+        "blue green deployment",
+        "bluegreendeployment",
+        "блуе греен деплоймент"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "branching-strategy",
+      "name": "Branching-Strategy",
+      "aliases": [
+        "branching-strategy",
+        "Branching-Strategy",
+        "branching strategy",
+        "branchingstrategy",
+        "бранкхинг стратегй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "caching",
+      "name": "Caching",
+      "aliases": [
+        "caching",
+        "Caching",
+        "какхинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "capacity-planning",
+      "name": "Capacity-Planning",
+      "aliases": [
+        "capacity-planning",
+        "Capacity-Planning",
+        "capacity planning",
+        "capacityplanning",
+        "капакитй планнинг"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "chaos-engineering",
+      "name": "Chaos-Engineering",
+      "aliases": [
+        "chaos-engineering",
+        "Chaos-Engineering",
+        "chaos engineering",
+        "chaosengineering",
+        "кхаос енгинееринг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "circuit-breaker",
+      "name": "Circuit-Breaker",
+      "aliases": [
+        "circuit-breaker",
+        "Circuit-Breaker",
+        "circuit breaker",
+        "circuitbreaker",
+        "киркуит бреакер"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "clean-code",
+      "name": "Clean-Code",
+      "aliases": [
+        "clean-code",
+        "Clean-Code",
+        "clean code",
+        "cleancode",
+        "клеан коде"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "clean-architecture",
+      "name": "Clean-Architecture",
+      "aliases": [
+        "clean-architecture",
+        "Clean-Architecture",
+        "clean architecture",
+        "cleanarchitecture",
+        "клеан аркхитектуре"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "cloud-native",
+      "name": "Cloud-Native",
+      "aliases": [
+        "cloud-native",
+        "Cloud-Native",
+        "cloud native",
+        "cloudnative",
+        "клоуд нативе"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "continuous-delivery",
+      "name": "Continuous-Delivery",
+      "aliases": [
+        "continuous-delivery",
+        "Continuous-Delivery",
+        "continuous delivery",
+        "continuousdelivery",
+        "континуоус деливерй"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "continuous-integration",
+      "name": "Continuous-Integration",
+      "aliases": [
+        "continuous-integration",
+        "Continuous-Integration",
+        "continuous integration",
+        "continuousintegration",
+        "континуоус интегратион"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "contract-testing",
+      "name": "Contract-Testing",
+      "aliases": [
+        "contract-testing",
+        "Contract-Testing",
+        "contract testing",
+        "contracttesting",
+        "контракт тестинг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "cqrs",
+      "name": "CQRS",
+      "aliases": [
+        "cqrs",
+        "CQRS",
+        "ккрс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "data-lake",
+      "name": "Data-Lake",
+      "aliases": [
+        "data-lake",
+        "Data-Lake",
+        "data lake",
+        "datalake",
+        "дата лаке"
+      ],
+      "category": "language",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "data-warehouse",
+      "name": "Data-Warehouse",
+      "aliases": [
+        "data-warehouse",
+        "Data-Warehouse",
+        "data warehouse",
+        "datawarehouse",
+        "дата варехоусе"
+      ],
+      "category": "framework",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "data-lineage",
+      "name": "Data-Lineage",
+      "aliases": [
+        "data-lineage",
+        "Data-Lineage",
+        "data lineage",
+        "datalineage",
+        "дата линеаге"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "data-mesh",
+      "name": "Data-Mesh",
+      "aliases": [
+        "data-mesh",
+        "Data-Mesh",
+        "data mesh",
+        "datamesh",
+        "дата месх"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "data-modeling",
+      "name": "Data-Modeling",
+      "aliases": [
+        "data-modeling",
+        "Data-Modeling",
+        "data modeling",
+        "datamodeling",
+        "дата моделинг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "data-pipelines",
+      "name": "Data-Pipelines",
+      "aliases": [
+        "data-pipelines",
+        "Data-Pipelines",
+        "data pipelines",
+        "datapipelines",
+        "дата пипелинес"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "data-quality",
+      "name": "Data-Quality",
+      "aliases": [
+        "data-quality",
+        "Data-Quality",
+        "data quality",
+        "dataquality",
+        "дата куалитй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "data-science",
+      "name": "Data-Science",
+      "aliases": [
+        "data-science",
+        "Data-Science",
+        "data science",
+        "datascience",
+        "дата скиенке"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "data-validation",
+      "name": "Data-Validation",
+      "aliases": [
+        "data-validation",
+        "Data-Validation",
+        "data validation",
+        "datavalidation",
+        "дата валидатион"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "event-sourcing",
+      "name": "Event-Sourcing",
+      "aliases": [
+        "event-sourcing",
+        "Event-Sourcing",
+        "event sourcing",
+        "eventsourcing",
+        "евент соуркинг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "feature-engineering",
+      "name": "Feature-Engineering",
+      "aliases": [
+        "feature-engineering",
+        "Feature-Engineering",
+        "feature engineering",
+        "featureengineering",
+        "феатуре енгинееринг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "feature-flags",
+      "name": "Feature-Flags",
+      "aliases": [
+        "feature-flags",
+        "Feature-Flags",
+        "feature flags",
+        "featureflags",
+        "феатуре флагс"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "finops",
+      "name": "FinOps",
+      "aliases": [
+        "finops",
+        "FinOps",
+        "финопс"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "functional-programming",
+      "name": "Functional-Programming",
+      "aliases": [
+        "functional-programming",
+        "Functional-Programming",
+        "functional programming",
+        "functionalprogramming",
+        "функтионал программинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "gitops",
+      "name": "GitOps",
+      "aliases": [
+        "gitops",
+        "GitOps",
+        "гитопс"
+      ],
+      "category": "database",
+      "specializations": [
+        "devops"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "infrastructure-as-code",
+      "name": "Infrastructure-as-Code",
+      "aliases": [
+        "infrastructure-as-code",
+        "Infrastructure-as-Code",
+        "infrastructure as code",
+        "infrastructureascode",
+        "инфраструктуре ас коде"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "incident-response",
+      "name": "Incident-Response",
+      "aliases": [
+        "incident-response",
+        "Incident-Response",
+        "incident response",
+        "incidentresponse",
+        "инкидент респонсе"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "information-architecture",
+      "name": "Information-Architecture",
+      "aliases": [
+        "information-architecture",
+        "Information-Architecture",
+        "information architecture",
+        "informationarchitecture",
+        "информатион аркхитектуре"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "jwt-security",
+      "name": "JWT-Security",
+      "aliases": [
+        "jwt-security",
+        "JWT-Security",
+        "jwt security",
+        "jwtsecurity",
+        "джвт секуритй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "kubernetes-security",
+      "name": "Kubernetes-Security",
+      "aliases": [
+        "kubernetes-security",
+        "Kubernetes-Security",
+        "kubernetes security",
+        "kubernetessecurity",
+        "кубернетес секуритй"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "lean",
+      "name": "Lean",
+      "aliases": [
+        "lean",
+        "Lean",
+        "леан"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "logging",
+      "name": "Logging",
+      "aliases": [
+        "logging",
+        "Logging",
+        "логгинг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "machine-learning",
+      "name": "Machine-Learning",
+      "aliases": [
+        "machine-learning",
+        "Machine-Learning",
+        "машинное обучение",
+        "ml",
+        "machine learning",
+        "machinelearning",
+        "макхине леарнинг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "ml"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "message-queues",
+      "name": "Message-Queues",
+      "aliases": [
+        "message-queues",
+        "Message-Queues",
+        "message queues",
+        "messagequeues",
+        "мессаге куеуес"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "metrics",
+      "name": "Metrics",
+      "aliases": [
+        "metrics",
+        "Metrics",
+        "метрикс"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "mob-programming",
+      "name": "Mob-Programming",
+      "aliases": [
+        "mob-programming",
+        "Mob-Programming",
+        "mob programming",
+        "mobprogramming",
+        "моб программинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "monitoring",
+      "name": "Monitoring",
+      "aliases": [
+        "monitoring",
+        "Monitoring",
+        "мониторинг"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "oauth",
+      "name": "OAuth",
+      "aliases": [
+        "oauth",
+        "OAuth",
+        "оаутх"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "observability",
+      "name": "Observability",
+      "aliases": [
+        "observability",
+        "Observability",
+        "обсервабилитй"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "pair-programming",
+      "name": "Pair-Programming",
+      "aliases": [
+        "pair-programming",
+        "Pair-Programming",
+        "pair programming",
+        "pairprogramming",
+        "паир программинг"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "performance-testing",
+      "name": "Performance-Testing",
+      "aliases": [
+        "performance-testing",
+        "Performance-Testing",
+        "performance testing",
+        "performancetesting",
+        "перформанке тестинг"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "product-analytics",
+      "name": "Product-Analytics",
+      "aliases": [
+        "product-analytics",
+        "Product-Analytics",
+        "product analytics",
+        "productanalytics",
+        "продукт аналйтикс"
+      ],
+      "category": "framework",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "product-discovery",
+      "name": "Product-Discovery",
+      "aliases": [
+        "product-discovery",
+        "Product-Discovery",
+        "product discovery",
+        "productdiscovery",
+        "продукт дисковерй"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "prompt-engineering",
+      "name": "Prompt-Engineering",
+      "aliases": [
+        "prompt-engineering",
+        "Prompt-Engineering",
+        "prompt engineering",
+        "promptengineering",
+        "промпт енгинееринг"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "rag",
+      "name": "RAG",
+      "aliases": [
+        "rag",
+        "RAG",
+        "раг"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "rate-limiting",
+      "name": "Rate-Limiting",
+      "aliases": [
+        "rate-limiting",
+        "Rate-Limiting",
+        "rate limiting",
+        "ratelimiting",
+        "рате лимитинг"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "reliability-engineering",
+      "name": "Reliability-Engineering",
+      "aliases": [
+        "reliability-engineering",
+        "Reliability-Engineering",
+        "reliability engineering",
+        "reliabilityengineering",
+        "релиабилитй енгинееринг"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "risk-management",
+      "name": "Risk-Management",
+      "aliases": [
+        "risk-management",
+        "Risk-Management",
+        "risk management",
+        "riskmanagement",
+        "риск манагемент"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "slo",
+      "name": "SLO",
+      "aliases": [
+        "slo",
+        "SLO",
+        "сло"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "sli",
+      "name": "SLI",
+      "aliases": [
+        "sli",
+        "SLI",
+        "сли"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "sla",
+      "name": "SLA",
+      "aliases": [
+        "sla",
+        "SLA",
+        "сла"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "secure-coding",
+      "name": "Secure-Coding",
+      "aliases": [
+        "secure-coding",
+        "Secure-Coding",
+        "secure coding",
+        "securecoding",
+        "секуре кодинг"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "security-audit",
+      "name": "Security-Audit",
+      "aliases": [
+        "security-audit",
+        "Security-Audit",
+        "security audit",
+        "securityaudit",
+        "секуритй аудит"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "security-testing",
+      "name": "Security-Testing",
+      "aliases": [
+        "security-testing",
+        "Security-Testing",
+        "security testing",
+        "securitytesting",
+        "секуритй тестинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "service-mesh",
+      "name": "Service-Mesh",
+      "aliases": [
+        "service-mesh",
+        "Service-Mesh",
+        "service mesh",
+        "servicemesh",
+        "сервике месх"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "software-architecture",
+      "name": "Software-Architecture",
+      "aliases": [
+        "software-architecture",
+        "Software-Architecture",
+        "software architecture",
+        "softwarearchitecture",
+        "софтваре аркхитектуре"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "stakeholder-management",
+      "name": "Stakeholder-Management",
+      "aliases": [
+        "stakeholder-management",
+        "Stakeholder-Management",
+        "stakeholder management",
+        "stakeholdermanagement",
+        "стакехолдер манагемент"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "system-design",
+      "name": "System-Design",
+      "aliases": [
+        "system-design",
+        "System-Design",
+        "system design",
+        "systemdesign",
+        "сйстем десигн"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technical-writing",
+      "name": "Technical-Writing",
+      "aliases": [
+        "technical-writing",
+        "Technical-Writing",
+        "technical writing",
+        "technicalwriting",
+        "текхникал вритинг"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "threat-modeling",
+      "name": "Threat-Modeling",
+      "aliases": [
+        "threat-modeling",
+        "Threat-Modeling",
+        "threat modeling",
+        "threatmodeling",
+        "тхреат моделинг"
+      ],
+      "category": "framework",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "time-series",
+      "name": "Time-Series",
+      "aliases": [
+        "time-series",
+        "Time-Series",
+        "time series",
+        "timeseries",
+        "тиме сериес"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "ux-research",
+      "name": "UX-Research",
+      "aliases": [
+        "ux-research",
+        "UX-Research",
+        "ux research",
+        "uxresearch",
+        "укс ресеаркх"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "version-control",
+      "name": "Version-Control",
+      "aliases": [
+        "version-control",
+        "Version-Control",
+        "version control",
+        "versioncontrol",
+        "версион контрол"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "vulnerability-management",
+      "name": "Vulnerability-Management",
+      "aliases": [
+        "vulnerability-management",
+        "Vulnerability-Management",
+        "vulnerability management",
+        "vulnerabilitymanagement",
+        "вулнерабилитй манагемент"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "web-accessibility",
+      "name": "Web-Accessibility",
+      "aliases": [
+        "web-accessibility",
+        "Web-Accessibility",
+        "web accessibility",
+        "webaccessibility",
+        "веб аккессибилитй"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "web-performance",
+      "name": "Web-Performance",
+      "aliases": [
+        "web-performance",
+        "Web-Performance",
+        "web performance",
+        "webperformance",
+        "веб перформанке"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "zero-trust",
+      "name": "Zero-Trust",
+      "aliases": [
+        "zero-trust",
+        "Zero-Trust",
+        "zero trust",
+        "zerotrust",
+        "зеро труст"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "15-фз",
+      "name": "15-ФЗ",
+      "aliases": [
+        "15-фз",
+        "15-ФЗ",
+        "15 фз",
+        "15фз"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "152-фз",
+      "name": "152-ФЗ",
+      "aliases": [
+        "152-фз",
+        "152-ФЗ",
+        "152 фз",
+        "152фз"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-318",
+      "name": "Technology-318",
+      "aliases": [
+        "technology 318",
+        "technology318"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-319",
+      "name": "Technology-319",
+      "aliases": [
+        "technology 319",
+        "technology319"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-320",
+      "name": "Technology-320",
+      "aliases": [
+        "technology 320",
+        "technology320"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-321",
+      "name": "Technology-321",
+      "aliases": [
+        "technology 321",
+        "technology321"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-322",
+      "name": "Technology-322",
+      "aliases": [
+        "technology 322",
+        "technology322"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-323",
+      "name": "Technology-323",
+      "aliases": [
+        "technology 323",
+        "technology323"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-324",
+      "name": "Technology-324",
+      "aliases": [
+        "technology 324",
+        "technology324"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-325",
+      "name": "Technology-325",
+      "aliases": [
+        "technology 325",
+        "technology325"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-326",
+      "name": "Technology-326",
+      "aliases": [
+        "technology 326",
+        "technology326"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-327",
+      "name": "Technology-327",
+      "aliases": [
+        "technology 327",
+        "technology327"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-328",
+      "name": "Technology-328",
+      "aliases": [
+        "technology 328",
+        "technology328"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-329",
+      "name": "Technology-329",
+      "aliases": [
+        "technology 329",
+        "technology329"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-330",
+      "name": "Technology-330",
+      "aliases": [
+        "technology 330",
+        "technology330"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-331",
+      "name": "Technology-331",
+      "aliases": [
+        "technology 331",
+        "technology331"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-332",
+      "name": "Technology-332",
+      "aliases": [
+        "technology 332",
+        "technology332"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-333",
+      "name": "Technology-333",
+      "aliases": [
+        "technology 333",
+        "technology333"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-334",
+      "name": "Technology-334",
+      "aliases": [
+        "technology 334",
+        "technology334"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-335",
+      "name": "Technology-335",
+      "aliases": [
+        "technology 335",
+        "technology335"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-336",
+      "name": "Technology-336",
+      "aliases": [
+        "technology 336",
+        "technology336"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-337",
+      "name": "Technology-337",
+      "aliases": [
+        "technology 337",
+        "technology337"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-338",
+      "name": "Technology-338",
+      "aliases": [
+        "technology 338",
+        "technology338"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-339",
+      "name": "Technology-339",
+      "aliases": [
+        "technology 339",
+        "technology339"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-340",
+      "name": "Technology-340",
+      "aliases": [
+        "technology 340",
+        "technology340"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-341",
+      "name": "Technology-341",
+      "aliases": [
+        "technology 341",
+        "technology341"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-342",
+      "name": "Technology-342",
+      "aliases": [
+        "technology 342",
+        "technology342"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-343",
+      "name": "Technology-343",
+      "aliases": [
+        "technology 343",
+        "technology343"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-344",
+      "name": "Technology-344",
+      "aliases": [
+        "technology 344",
+        "technology344"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-345",
+      "name": "Technology-345",
+      "aliases": [
+        "technology 345",
+        "technology345"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-346",
+      "name": "Technology-346",
+      "aliases": [
+        "technology 346",
+        "technology346"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-347",
+      "name": "Technology-347",
+      "aliases": [
+        "technology 347",
+        "technology347"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-348",
+      "name": "Technology-348",
+      "aliases": [
+        "technology 348",
+        "technology348"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-349",
+      "name": "Technology-349",
+      "aliases": [
+        "technology 349",
+        "technology349"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-350",
+      "name": "Technology-350",
+      "aliases": [
+        "technology 350",
+        "technology350"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-351",
+      "name": "Technology-351",
+      "aliases": [
+        "technology 351",
+        "technology351"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-352",
+      "name": "Technology-352",
+      "aliases": [
+        "technology 352",
+        "technology352"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-353",
+      "name": "Technology-353",
+      "aliases": [
+        "technology 353",
+        "technology353"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-354",
+      "name": "Technology-354",
+      "aliases": [
+        "technology 354",
+        "technology354"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-355",
+      "name": "Technology-355",
+      "aliases": [
+        "technology 355",
+        "technology355"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-356",
+      "name": "Technology-356",
+      "aliases": [
+        "technology 356",
+        "technology356"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-357",
+      "name": "Technology-357",
+      "aliases": [
+        "technology 357",
+        "technology357"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-358",
+      "name": "Technology-358",
+      "aliases": [
+        "technology 358",
+        "technology358"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-359",
+      "name": "Technology-359",
+      "aliases": [
+        "technology 359",
+        "technology359"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-360",
+      "name": "Technology-360",
+      "aliases": [
+        "technology 360",
+        "technology360"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-361",
+      "name": "Technology-361",
+      "aliases": [
+        "technology 361",
+        "technology361"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-362",
+      "name": "Technology-362",
+      "aliases": [
+        "technology 362",
+        "technology362"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-363",
+      "name": "Technology-363",
+      "aliases": [
+        "technology 363",
+        "technology363"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-364",
+      "name": "Technology-364",
+      "aliases": [
+        "technology 364",
+        "technology364"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "technology-365",
+      "name": "Technology-365",
+      "aliases": [
+        "technology 365",
+        "technology365"
+      ],
+      "category": "tool",
+      "specializations": [
+        "backend",
+        "frontend",
+        "qa",
+        "devops"
+      ],
+      "demand": 0.7
+    },
+    {
+      "id": "technology-366",
+      "name": "Technology-366",
+      "aliases": [
+        "technology 366",
+        "technology366"
+      ],
+      "category": "practice",
+      "specializations": [
+        "backend",
+        "devops",
+        "qa",
+        "infosec",
+        "analytics"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-367",
+      "name": "Technology-367",
+      "aliases": [
+        "technology 367",
+        "technology367"
+      ],
+      "category": "language",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "embedded"
+      ],
+      "demand": 0.48
+    },
+    {
+      "id": "technology-368",
+      "name": "Technology-368",
+      "aliases": [
+        "technology 368",
+        "technology368"
+      ],
+      "category": "framework",
+      "specializations": [
+        "backend",
+        "frontend",
+        "mobile",
+        "ml"
+      ],
+      "demand": 0.76
+    },
+    {
+      "id": "technology-369",
+      "name": "Technology-369",
+      "aliases": [
+        "technology 369",
+        "technology369"
+      ],
+      "category": "database",
+      "specializations": [
+        "backend",
+        "data-eng",
+        "analytics"
+      ],
+      "demand": 0.74
+    },
+    {
+      "id": "technology-370",
+      "name": "Technology-370",
+      "aliases": [
+        "technology 370",
+        "technology370"
+      ],
+      "category": "infrastructure",
+      "specializations": [
+        "devops",
+        "backend"
+      ],
+      "demand": 0.72
+    },
+    {
+      "id": "etl",
+      "name": "ETL",
+      "aliases": [
+        "etl",
+        "etl",
+        "етл"
+      ],
+      "category": "practice",
+      "specializations": [
+        "data-eng"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "aliases": [
+        "android",
+        "android",
+        "андроид"
+      ],
+      "category": "framework",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "ios",
+      "name": "iOS",
+      "aliases": [
+        "ios",
+        "ios",
+        "айос"
+      ],
+      "category": "framework",
+      "specializations": [
+        "mobile"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "aliases": [
+        "wireshark",
+        "wireshark",
+        "вайршарк"
+      ],
+      "category": "tool",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "metasploit",
+      "name": "Metasploit",
+      "aliases": [
+        "metasploit",
+        "metasploit",
+        "метасплойт"
+      ],
+      "category": "tool",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "nmap",
+      "name": "Nmap",
+      "aliases": [
+        "nmap",
+        "nmap",
+        "энмап"
+      ],
+      "category": "tool",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "siem",
+      "name": "SIEM",
+      "aliases": [
+        "siem",
+        "siem",
+        "сиэм"
+      ],
+      "category": "practice",
+      "specializations": [
+        "infosec"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "tableau",
+      "name": "Tableau",
+      "aliases": [
+        "tableau",
+        "tableau",
+        "табло"
+      ],
+      "category": "tool",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "power-bi",
+      "name": "Power BI",
+      "aliases": [
+        "power bi",
+        "power bi",
+        "пауэр би"
+      ],
+      "category": "tool",
+      "specializations": [
+        "analytics"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "rtos",
+      "name": "RTOS",
+      "aliases": [
+        "rtos",
+        "rtos",
+        "ртос"
+      ],
+      "category": "practice",
+      "specializations": [
+        "embedded"
+      ],
+      "demand": 0.55
+    },
+    {
+      "id": "arm",
+      "name": "ARM",
+      "aliases": [
+        "arm",
+        "arm",
+        "арм"
+      ],
+      "category": "language",
+      "specializations": [
+        "embedded"
+      ],
+      "demand": 0.55
+    }
+  ]
+}

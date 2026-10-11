@@ -1,0 +1,721 @@
+{
+  "version": 1,
+  "industries": [
+    {
+      "id": "it",
+      "name": "Информационные технологии"
+    }
+  ],
+  "specializations": [
+    {
+      "id": "backend",
+      "name": "Backend-разработка",
+      "industry_id": "it",
+      "description": "Серверные приложения, API и данные",
+      "subspecializations": [
+        {
+          "id": "backend-api",
+          "name": "Api"
+        },
+        {
+          "id": "backend-microservices",
+          "name": "Microservices"
+        },
+        {
+          "id": "backend-highload",
+          "name": "Highload"
+        },
+        {
+          "id": "backend-integration",
+          "name": "Integration"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "algorithms",
+          "name": "Алгоритмы и структуры данных",
+          "weight": 0.17
+        },
+        {
+          "id": "language",
+          "name": "Языки программирования",
+          "weight": 0.17
+        },
+        {
+          "id": "databases",
+          "name": "Базы данных и SQL",
+          "weight": 0.17
+        },
+        {
+          "id": "api_networks",
+          "name": "Сети и API",
+          "weight": 0.17
+        },
+        {
+          "id": "architecture",
+          "name": "Архитектура",
+          "weight": 0.17
+        },
+        {
+          "id": "engineering",
+          "name": "Инженерные практики",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend-разработка",
+      "industry_id": "it",
+      "description": "Пользовательские веб-интерфейсы",
+      "subspecializations": [
+        {
+          "id": "frontend-web-apps",
+          "name": "Web Apps"
+        },
+        {
+          "id": "frontend-ui-systems",
+          "name": "Ui Systems"
+        },
+        {
+          "id": "frontend-web-performance",
+          "name": "Web Performance"
+        },
+        {
+          "id": "frontend-accessibility",
+          "name": "Accessibility"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "algorithms",
+          "name": "Алгоритмы",
+          "weight": 0.17
+        },
+        {
+          "id": "javascript",
+          "name": "JavaScript и TypeScript",
+          "weight": 0.17
+        },
+        {
+          "id": "browser",
+          "name": "Браузер и DOM",
+          "weight": 0.17
+        },
+        {
+          "id": "layout",
+          "name": "Вёрстка и доступность",
+          "weight": 0.17
+        },
+        {
+          "id": "framework",
+          "name": "Фреймворки",
+          "weight": 0.17
+        },
+        {
+          "id": "performance",
+          "name": "Производительность",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "mobile",
+      "name": "Мобильная разработка",
+      "industry_id": "it",
+      "description": "Нативные и кроссплатформенные приложения",
+      "subspecializations": [
+        {
+          "id": "mobile-android",
+          "name": "Android"
+        },
+        {
+          "id": "mobile-ios",
+          "name": "Ios"
+        },
+        {
+          "id": "mobile-cross-platform",
+          "name": "Cross Platform"
+        },
+        {
+          "id": "mobile-mobile-platform",
+          "name": "Mobile Platform"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "algorithms",
+          "name": "Алгоритмы",
+          "weight": 0.17
+        },
+        {
+          "id": "language",
+          "name": "Языки Kotlin / Swift",
+          "weight": 0.17
+        },
+        {
+          "id": "platform_api",
+          "name": "Платформенные API",
+          "weight": 0.17
+        },
+        {
+          "id": "app_architecture",
+          "name": "Архитектура приложения",
+          "weight": 0.17
+        },
+        {
+          "id": "network_storage",
+          "name": "Сеть и хранилище",
+          "weight": 0.17
+        },
+        {
+          "id": "release",
+          "name": "Релизный цикл",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "devops",
+      "name": "DevOps / SRE",
+      "industry_id": "it",
+      "description": "Надёжная поставка и эксплуатация сервисов",
+      "subspecializations": [
+        {
+          "id": "devops-platform-engineering",
+          "name": "Platform Engineering"
+        },
+        {
+          "id": "devops-cloud",
+          "name": "Cloud"
+        },
+        {
+          "id": "devops-sre",
+          "name": "Sre"
+        },
+        {
+          "id": "devops-ci-cd",
+          "name": "Ci Cd"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "linux",
+          "name": "Linux",
+          "weight": 0.17
+        },
+        {
+          "id": "networks",
+          "name": "Сети",
+          "weight": 0.17
+        },
+        {
+          "id": "containers",
+          "name": "Контейнеры и оркестрация",
+          "weight": 0.17
+        },
+        {
+          "id": "cicd",
+          "name": "CI/CD",
+          "weight": 0.17
+        },
+        {
+          "id": "iac",
+          "name": "Инфраструктура как код",
+          "weight": 0.17
+        },
+        {
+          "id": "observability",
+          "name": "Наблюдаемость и надёжность",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "data-eng",
+      "name": "Data Engineering",
+      "industry_id": "it",
+      "description": "Платформы и конвейеры данных",
+      "subspecializations": [
+        {
+          "id": "data-eng-etl",
+          "name": "Etl"
+        },
+        {
+          "id": "data-eng-dwh",
+          "name": "Dwh"
+        },
+        {
+          "id": "data-eng-streaming",
+          "name": "Streaming"
+        },
+        {
+          "id": "data-eng-data-platform",
+          "name": "Data Platform"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "sql_modeling",
+          "name": "SQL и моделирование",
+          "weight": 0.17
+        },
+        {
+          "id": "etl",
+          "name": "ETL/ELT",
+          "weight": 0.17
+        },
+        {
+          "id": "distributed",
+          "name": "Распределённая обработка",
+          "weight": 0.17
+        },
+        {
+          "id": "quality",
+          "name": "Качество данных",
+          "weight": 0.17
+        },
+        {
+          "id": "streaming",
+          "name": "Стриминг",
+          "weight": 0.17
+        },
+        {
+          "id": "data_infra",
+          "name": "Инфраструктура данных",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "ml",
+      "name": "ML / AI",
+      "industry_id": "it",
+      "description": "Модели машинного обучения и их эксплуатация",
+      "subspecializations": [
+        {
+          "id": "ml-machine-learning",
+          "name": "Machine Learning"
+        },
+        {
+          "id": "ml-deep-learning",
+          "name": "Deep Learning"
+        },
+        {
+          "id": "ml-mlops",
+          "name": "Mlops"
+        },
+        {
+          "id": "ml-nlp",
+          "name": "Nlp"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "math",
+          "name": "Математика и статистика",
+          "weight": 0.17
+        },
+        {
+          "id": "classic_ml",
+          "name": "Классический ML",
+          "weight": 0.17
+        },
+        {
+          "id": "deep_learning",
+          "name": "Глубокое обучение",
+          "weight": 0.17
+        },
+        {
+          "id": "ml_pipelines",
+          "name": "ML-пайплайны",
+          "weight": 0.17
+        },
+        {
+          "id": "evaluation",
+          "name": "Оценка качества моделей",
+          "weight": 0.17
+        },
+        {
+          "id": "data",
+          "name": "Работа с данными",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "qa",
+      "name": "QA / тестирование",
+      "industry_id": "it",
+      "description": "Качество программных продуктов",
+      "subspecializations": [
+        {
+          "id": "qa-manual",
+          "name": "Manual"
+        },
+        {
+          "id": "qa-automation",
+          "name": "Automation"
+        },
+        {
+          "id": "qa-performance",
+          "name": "Performance"
+        },
+        {
+          "id": "qa-quality-engineering",
+          "name": "Quality Engineering"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "theory",
+          "name": "Теория тестирования",
+          "weight": 0.17
+        },
+        {
+          "id": "design",
+          "name": "Тест-дизайн",
+          "weight": 0.17
+        },
+        {
+          "id": "automation",
+          "name": "Автоматизация",
+          "weight": 0.17
+        },
+        {
+          "id": "api_testing",
+          "name": "API-тестирование",
+          "weight": 0.17
+        },
+        {
+          "id": "performance",
+          "name": "Производительность",
+          "weight": 0.17
+        },
+        {
+          "id": "quality_process",
+          "name": "Процессы качества",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "infosec",
+      "name": "Информационная безопасность",
+      "industry_id": "it",
+      "description": "Защита инфраструктуры и приложений",
+      "subspecializations": [
+        {
+          "id": "infosec-appsec",
+          "name": "Appsec"
+        },
+        {
+          "id": "infosec-pentest",
+          "name": "Pentest"
+        },
+        {
+          "id": "infosec-soc",
+          "name": "Soc"
+        },
+        {
+          "id": "infosec-governance",
+          "name": "Governance"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "net_crypto",
+          "name": "Сети и криптография",
+          "weight": 0.17
+        },
+        {
+          "id": "web_vulns",
+          "name": "Веб-уязвимости",
+          "weight": 0.17
+        },
+        {
+          "id": "appsec",
+          "name": "Безопасность приложений",
+          "weight": 0.17
+        },
+        {
+          "id": "incident",
+          "name": "Мониторинг и реагирование",
+          "weight": 0.17
+        },
+        {
+          "id": "compliance",
+          "name": "Compliance",
+          "weight": 0.17
+        },
+        {
+          "id": "pentest",
+          "name": "Пентест",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "Аналитика / BI",
+      "industry_id": "it",
+      "description": "Продуктовая и бизнес-аналитика",
+      "subspecializations": [
+        {
+          "id": "analytics-product-analytics",
+          "name": "Product Analytics"
+        },
+        {
+          "id": "analytics-bi",
+          "name": "Bi"
+        },
+        {
+          "id": "analytics-marketing-analytics",
+          "name": "Marketing Analytics"
+        },
+        {
+          "id": "analytics-data-analysis",
+          "name": "Data Analysis"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "sql",
+          "name": "SQL",
+          "weight": 0.17
+        },
+        {
+          "id": "statistics",
+          "name": "Статистика",
+          "weight": 0.17
+        },
+        {
+          "id": "metrics",
+          "name": "Продуктовые метрики",
+          "weight": 0.17
+        },
+        {
+          "id": "visualization",
+          "name": "Визуализация",
+          "weight": 0.17
+        },
+        {
+          "id": "experiments",
+          "name": "A/B-эксперименты",
+          "weight": 0.17
+        },
+        {
+          "id": "storytelling",
+          "name": "Data storytelling",
+          "weight": 0.15
+        }
+      ]
+    },
+    {
+      "id": "embedded",
+      "name": "Системная / Embedded-разработка",
+      "industry_id": "it",
+      "description": "Встраиваемые и системные решения",
+      "subspecializations": [
+        {
+          "id": "embedded-firmware",
+          "name": "Firmware"
+        },
+        {
+          "id": "embedded-rtos",
+          "name": "Rtos"
+        },
+        {
+          "id": "embedded-iot",
+          "name": "Iot"
+        },
+        {
+          "id": "embedded-systems-programming",
+          "name": "Systems Programming"
+        }
+      ],
+      "competencies": [
+        {
+          "id": "cpp",
+          "name": "C/C++",
+          "weight": 0.17
+        },
+        {
+          "id": "memory",
+          "name": "Память и указатели",
+          "weight": 0.17
+        },
+        {
+          "id": "rtos",
+          "name": "ОС реального времени",
+          "weight": 0.17
+        },
+        {
+          "id": "peripherals",
+          "name": "Периферия и протоколы",
+          "weight": 0.17
+        },
+        {
+          "id": "debug",
+          "name": "Отладка",
+          "weight": 0.17
+        },
+        {
+          "id": "optimization",
+          "name": "Оптимизация",
+          "weight": 0.15
+        }
+      ]
+    }
+  ],
+  "grades": [
+    {
+      "id": "intern",
+      "name": "Intern",
+      "order": 1,
+      "experience_hint": "до 1 года",
+      "color": "#8A83D1"
+    },
+    {
+      "id": "junior",
+      "name": "Junior",
+      "order": 2,
+      "experience_hint": "1–2 года",
+      "color": "#5B9BD5"
+    },
+    {
+      "id": "middle",
+      "name": "Middle",
+      "order": 3,
+      "experience_hint": "2–4 года",
+      "color": "#520978"
+    },
+    {
+      "id": "senior",
+      "name": "Senior",
+      "order": 4,
+      "experience_hint": "4–7 лет",
+      "color": "#FC3777"
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "order": 5,
+      "experience_hint": "от 6 лет",
+      "color": "#FF0053"
+    }
+  ],
+  "team_roles": [
+    {
+      "id": "individual-contributor",
+      "name": "Индивидуальный исполнитель"
+    },
+    {
+      "id": "tech-lead",
+      "name": "Технический лидер"
+    },
+    {
+      "id": "team-lead",
+      "name": "Тимлид"
+    },
+    {
+      "id": "architect",
+      "name": "Архитектор"
+    },
+    {
+      "id": "mentor",
+      "name": "Наставник"
+    },
+    {
+      "id": "scrum-master",
+      "name": "Scrum-мастер"
+    },
+    {
+      "id": "product-owner",
+      "name": "Владелец продукта"
+    },
+    {
+      "id": "engineering-manager",
+      "name": "Инженерный менеджер"
+    },
+    {
+      "id": "analyst",
+      "name": "Аналитик"
+    },
+    {
+      "id": "security-champion",
+      "name": "Security champion"
+    }
+  ],
+  "work_formats": [
+    {
+      "id": "remote",
+      "name": "Удалённо"
+    },
+    {
+      "id": "hybrid",
+      "name": "Гибрид"
+    },
+    {
+      "id": "office",
+      "name": "Офис"
+    }
+  ],
+  "domains": [
+    {
+      "id": "fintech",
+      "name": "Финтех"
+    },
+    {
+      "id": "ecommerce",
+      "name": "Электронная коммерция"
+    },
+    {
+      "id": "edtech",
+      "name": "Образовательные технологии"
+    },
+    {
+      "id": "healthtech",
+      "name": "Медицинские технологии"
+    },
+    {
+      "id": "gamedev",
+      "name": "Игровая индустрия"
+    },
+    {
+      "id": "telecom",
+      "name": "Телеком"
+    },
+    {
+      "id": "govtech",
+      "name": "Государственные сервисы"
+    },
+    {
+      "id": "logistics",
+      "name": "Логистика"
+    },
+    {
+      "id": "media",
+      "name": "Медиа"
+    },
+    {
+      "id": "industrial",
+      "name": "Промышленность"
+    },
+    {
+      "id": "agrotech",
+      "name": "Агротехнологии"
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Кибербезопасность"
+    }
+  ],
+  "grade_change_cooldown_days": {
+    "intern": 30,
+    "junior": 30,
+    "middle": 90,
+    "senior": 90,
+    "lead": 90
+  }
+}
