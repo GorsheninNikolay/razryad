@@ -1,4 +1,4 @@
-name: Test and deploy
+name: Tests and build
 on:
   push:
     branches: [master]
@@ -47,27 +47,3 @@ jobs:
           name: release
           path: release.tar.gz
           retention-days: 7
-  deploy:
-    if: github.ref == 'refs/heads/master' && github.event_name != 'pull_request'
-    needs: test-build
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    environment: production
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: release
-      - name: Deploy tested artifact with pinned SSH host key
-        env:
-          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
-          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
-          DEPLOY_KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
-          REVISION: ${{ github.sha }}
-        run: |
-          set -euo pipefail
-          install -d -m 700 ~/.ssh
-          printf '%s\n' "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          printf '%s\n' "$DEPLOY_KNOWN_HOSTS" > ~/.ssh/known_hosts
-          { printf '%s\n' "$REVISION"; cat release.tar.gz; } | ssh -T -i ~/.ssh/deploy_key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o BatchMode=yes "root@$DEPLOY_HOST"
-          curl --retry 3 --fail --silent --show-error "http://$DEPLOY_HOST/health"
