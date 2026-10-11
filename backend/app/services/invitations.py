@@ -86,7 +86,10 @@ def serialize_candidate_for_employer(candidate: dict, invitation_status: str) ->
         "years_of_experience": candidate.get("years_of_experience")
     }
     
-    if invitation_status == "accepted":
+    if "is_confirmed" in candidate:
+        res["is_confirmed"] = candidate["is_confirmed"]
+
+    if invitation_status in ("accepted", "hired"):
         res["fio"] = candidate.get("fio")
         res["contacts"] = candidate.get("contacts")
         res["workplace"] = candidate.get("workplace")

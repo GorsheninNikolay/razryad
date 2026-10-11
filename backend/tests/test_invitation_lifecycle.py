@@ -105,8 +105,16 @@ def test_invitation_lifecycle(client, test_db, auth_employer, auth_candidate):
 def test_invitation_contact_reveal(client, test_db, auth_employer, auth_candidate):
     from app.core.security import get_current_user, require_employer, require_candidate
     from app.core.db import get_db
-    from app.models.models import ContactRevealLog
-    
+    from app.models.models import ContactRevealLog, CandidateProfile, User
+
+    candidate_email = f"contact-{uuid.uuid4().hex}@test.com"
+    candidate_phone = "+79991234567"
+    test_db.add(User(id=auth_candidate["user_id"], email=candidate_email,
+                     password_hash="unused", role="candidate", email_confirmed=True))
+    candidate = test_db.get(CandidateProfile, auth_candidate["candidate_id"])
+    candidate.phone = candidate_phone
+    test_db.commit()
+
     def override_require_employer():
         return {"id": auth_employer["user_id"], "email": "emp@test.com", "role": "employer"}
     def override_require_candidate():
@@ -140,6 +148,11 @@ def test_invitation_contact_reveal(client, test_db, auth_employer, auth_candidat
     client.app.dependency_overrides[require_candidate] = override_require_candidate
     client.app.dependency_overrides[get_current_user] = override_require_candidate
     
+    incoming = client.get("/api/v1/invitations/incoming")
+    viewed = next(i for i in incoming.json() if i["id"] == inv_id)
+    assert viewed["status"] == "viewed"
+    assert viewed["subject"] == payload["subject"]
+    assert viewed["message"] == payload["message"]
     r = client.post(f"/api/v1/invitations/{inv_id}/accept")
     assert r.status_code == 200
     
@@ -152,9 +165,20 @@ def test_invitation_contact_reveal(client, test_db, auth_employer, auth_candidat
     r = client.get("/api/v1/invitations/sent")
     inv = next(i for i in r.json() if i["id"] == inv_id)
     assert inv["candidate_fio"] is not None, "FIO should be revealed after accept"
-    assert inv["candidate_contacts"] is not None
+    assert inv["candidate_contacts"] == {"email": candidate_email, "phone": candidate_phone}
     assert inv["candidate_pseudonym"] is None, "Pseudonym should be removed"
     
+    contacts = inv["candidate_contacts"]
+    fio = inv["candidate_fio"]
+    r = client.post(f"/api/v1/invitations/{inv_id}/hire")
+    assert r.status_code == 200
+    r = client.get("/api/v1/invitations/sent")
+    hired = next(i for i in r.json() if i["id"] == inv_id)
+    assert hired["status"] == "hired"
+    assert hired["candidate_contacts"] == contacts
+    assert hired["candidate_fio"] == fio
+    assert hired["candidate_pseudonym"] is None
+
     # Check decline branch
     client.app.dependency_overrides.clear()
     if _db_override: client.app.dependency_overrides[get_db] = _db_override

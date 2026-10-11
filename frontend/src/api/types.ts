@@ -148,7 +148,27 @@ export interface ShortlistCandidate {
   explanation: string
 }
 
-export interface ShortlistExplanation { matched_skills?: string[]; missing_must_have?: string[]; fsp_achievements?: string[]; freshness?: string; category_rank?: number }
+export interface ShortlistExplanation {
+  grade_match?: number
+  skills_matched?: string[]
+  skills_missing?: string[]
+  fsp_highlights?: string[]
+  freshness?: number
+  category_rank?: number
+}
+
+export interface ShortlistItem {
+  candidate: {
+    id: string
+    pseudonym?: string
+    grade: string
+    is_confirmed?: boolean
+    fsp_highlights?: string[]
+  }
+  match_score: number
+  explanation: ShortlistExplanation
+  counterfactual?: string | null
+}
 
 export interface Invitation {
   subject?: string
@@ -158,13 +178,16 @@ export interface Invitation {
   id: string
   employer_id: string
   candidate_id: string
-  offer_description: string
+  offer_description?: string
   company_name: string
-  contact_method: string
+  contact_method?: string
   contact_person?: string
-  status: 'sent' | 'viewed' | 'accepted' | 'declined' | 'expired'
+  candidate_fio?: string | null
+  candidate_pseudonym?: string | null
+  candidate_contacts?: {email?: string | null; phone?: string | null} | null
+  status: 'sent' | 'viewed' | 'accepted' | 'declined' | 'expired' | 'hired' | 'withdrawn'
   created_at: string
-  updated_at: string
+  updated_at?: string
 }
 
 export interface PaginatedResponse<T> {
