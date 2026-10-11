@@ -149,13 +149,20 @@ def answer(session_id:UUID,body:AnswerRequest,db:Session=Depends(get_db),user:di
         raise HTTPException(409,'Ответ ожидается только на текущее задание')
     item=db.get(Item,pending.item_id);version=db.get(ItemVersion,pending.item_version_id)
     raw_rubric=version.content.get('rubric')
+    if isinstance(raw_rubric,dict) and isinstance(raw_rubric.get('criteria'),list):
+        raw_rubric=raw_rubric['criteria']
     # Seed rubrics may be a mapping; grading service consumes criterion rows.
     rubric=([{'name':k,'weight':v if isinstance(v,(int,float)) else 1} for k,v in raw_rubric.items()]
             if isinstance(raw_rubric,dict) else
             [{'name':criterion,'weight':1} if isinstance(criterion,str) else criterion
              for criterion in raw_rubric] if isinstance(raw_rubric,list) else [])
-    spec={'format':item.item_type,'payload':version.content,'answer':version.content.get('correct_answer'),
-          'rubric':rubric,'acceptable_answers':version.content.get('acceptable_answers',[])}
+    c=version.content
+    key=c.get('correct_answer')
+    if key is None:
+        key=c.get('correct_index') if item.item_type == 'mcq' else c.get('expected')
+    spec={'format':item.item_type,'payload':c,'answer':key,
+          'rubric':rubric,'acceptable_answers':c.get('acceptable_answers',[]),
+          'keywords':c.get('accepted_keywords',[]),'pass_score':c.get('pass_score',.5)}
     try:
         response_value=body.normalized_response()
     except ValueError as exc:

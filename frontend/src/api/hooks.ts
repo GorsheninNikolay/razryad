@@ -10,6 +10,7 @@ import type {
   AnswerResponse,
   AssessmentResult,
   Invitation,
+  ShortlistItem,
 } from './types'
 
 // Auth hooks
@@ -95,7 +96,7 @@ export function useCompleteAssessment(options?: UseMutationOptions<AssessmentRes
 // Employer workflow hooks. Payloads mirror the OpenAPI resources; unknown optional fields are preserved.
 export interface NeedPayload { title: string; description: string; specialization_id: string; grade_min_id: string; grade_max_id: string; must_have_skills: string[]; nice_to_have_skills: string[]; salary_min: number; salary_max: number; work_format?: string; location?: string }
 export interface EmployerNeedResult extends NeedPayload { id: string; employer_id: string; parsed_data?: { confidence?: Record<string, number>; extracted_skills?: string[] } }
-export interface ShortlistResponse { items: Array<Record<string, unknown>>; total_filtered: number }
+export interface ShortlistResponse { items: ShortlistItem[]; total_filtered: number }
 export function useCreateNeed(options?: UseMutationOptions<EmployerNeedResult, Error, NeedPayload>) { return useMutation({ mutationFn: (data: NeedPayload) => apiClient.post<EmployerNeedResult>('/needs/', data), ...options }) }
 export function useNeeds(options?: Omit<UseQueryOptions<EmployerNeedResult[], Error>, 'queryKey'|'queryFn'>) { return useQuery({ queryKey: ['needs'], queryFn: () => apiClient.get<EmployerNeedResult[]>('/needs/'), ...options }) }
 export function useNeed(needId: string | null, options?: UseQueryOptions<EmployerNeedResult, Error>) { return useQuery({ queryKey: ['need', needId], queryFn: () => apiClient.get<EmployerNeedResult>(`/needs/${needId}`), enabled: !!needId, ...options }) }

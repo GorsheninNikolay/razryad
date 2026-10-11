@@ -66,7 +66,7 @@ export default function CandidateInvitations() {
                         <h3 className="text-lg font-semibold">{invitation.company_name}</h3>
                         <Badge variant="status">{getStatusLabel(invitation.status)}</Badge>
                       </div>
-                      <p className="text-gray-700 mb-3">{invitation.offer_description}</p>
+                      {invitation.subject && <p className="font-medium mb-1">{invitation.subject}</p>}<p className="text-gray-700 mb-3">{invitation.offer_description || invitation.message}</p>
                       <div className="space-y-1 text-sm">
                         <p className="text-gray-600">
                           <span className="font-medium">Зарплата:</span>{' '}
@@ -75,7 +75,7 @@ export default function CandidateInvitations() {
                               вилки кандидат видел «undefined – undefined ₽». */}
                           {formatSalary(invitation.salary_min, invitation.salary_max)}
                         </p>
-                        {invitation.status === 'accepted' && invitation.contact_method && (
+                        {(invitation.status === 'accepted' || invitation.status === 'hired') && invitation.contact_method && (
                           <div className="bg-green-50 border border-green-200 rounded-lg p-3 mt-3">
                             <p className="text-sm font-medium text-green-900 mb-1">
                               ✓ Контакты раскрыты
@@ -92,7 +92,7 @@ export default function CandidateInvitations() {
                         )}
                       </div>
                     </div>
-                    {invitation.status === 'sent' && (
+                    {(invitation.status === 'sent' || invitation.status === 'viewed') && (
                       <div className="flex gap-2 ml-4">
                         <Button
                           variant="primary"

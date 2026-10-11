@@ -140,6 +140,11 @@ def test_invitation_contact_reveal(client, test_db, auth_employer, auth_candidat
     client.app.dependency_overrides[require_candidate] = override_require_candidate
     client.app.dependency_overrides[get_current_user] = override_require_candidate
     
+    incoming = client.get("/api/v1/invitations/incoming")
+    viewed = next(i for i in incoming.json() if i["id"] == inv_id)
+    assert viewed["status"] == "viewed"
+    assert viewed["subject"] == payload["subject"]
+    assert viewed["message"] == payload["message"]
     r = client.post(f"/api/v1/invitations/{inv_id}/accept")
     assert r.status_code == 200
     
@@ -155,6 +160,17 @@ def test_invitation_contact_reveal(client, test_db, auth_employer, auth_candidat
     assert inv["candidate_contacts"] is not None
     assert inv["candidate_pseudonym"] is None, "Pseudonym should be removed"
     
+    contacts = inv["candidate_contacts"]
+    fio = inv["candidate_fio"]
+    r = client.post(f"/api/v1/invitations/{inv_id}/hire")
+    assert r.status_code == 200
+    r = client.get("/api/v1/invitations/sent")
+    hired = next(i for i in r.json() if i["id"] == inv_id)
+    assert hired["status"] == "hired"
+    assert hired["candidate_contacts"] == contacts
+    assert hired["candidate_fio"] == fio
+    assert hired["candidate_pseudonym"] is None
+
     # Check decline branch
     client.app.dependency_overrides.clear()
     if _db_override: client.app.dependency_overrides[get_db] = _db_override

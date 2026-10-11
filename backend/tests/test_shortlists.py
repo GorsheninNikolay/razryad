@@ -72,7 +72,7 @@ def test_shortlist_ranking(client, test_db, auth_employer):
     cand3 = CandidateProfile(id=uuid.uuid4(), user_id=uuid.uuid4())
     test_db.add(cand3)
     test_db.commit()
-    test_db.add(CategoryAssignment(candidate_id=cand3.id, specialization_id=spec.id, grade_id=grade1.id, is_confirmed=True))
+    test_db.add(CategoryAssignment(candidate_id=cand3.id, specialization_id=spec.id, grade_id=grade1.id, is_confirmed=False))
     
     test_db.commit()
 
@@ -82,7 +82,7 @@ def test_shortlist_ranking(client, test_db, auth_employer):
         "description": "text",
         "specialization_id": str(spec.id),
         "grade_min_id": str(grade1.id),
-        "grade_max_id": str(grade3.id),
+        "grade_max_id": str(grade2.id),
         "must_have_skills": ["python", "docker"],
         "salary_min": 100,
         "salary_max": 200
@@ -99,6 +99,12 @@ def test_shortlist_ranking(client, test_db, auth_employer):
     assert data["total_filtered"] >= 3
     items = data["items"]
     
+    assert next(item for item in items if item["candidate"]["id"] == str(cand1.id))["candidate"]["is_confirmed"] is True
+    assert next(item for item in items if item["candidate"]["id"] == str(cand3.id))["candidate"]["is_confirmed"] is False
+    senior = next(item for item in items if item["candidate"]["id"] == str(cand2.id))
+    assert senior["candidate"]["is_confirmed"] is True
+    assert senior["explanation"]["grade_match"] == .8
+
     # Check that scores are ordered
     scores = [item["match_score"] for item in items]
     assert scores == sorted(scores, reverse=True)

@@ -29,6 +29,8 @@ jobs:
       - run: pip install -r backend/requirements.txt
       - run: npm ci --registry=https://registry.npmjs.org && npm run build
         working-directory: frontend
+      - run: npm test
+        working-directory: frontend
       - run: python -m pytest -q
         working-directory: backend
         env:

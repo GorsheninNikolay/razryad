@@ -50,9 +50,17 @@ pip install -r requirements.txt
 python -m pytest -q
 ```
 
-Тесты изолируют SQLite от рабочей базы. 67 тестов: авторизация, приватность,
+Тесты изолируют SQLite от рабочей базы. Backend-проверки: авторизация, приватность,
 подбор, адаптивное тестирование и сквозной сценарий. API: /api/v1,
 OpenAPI: /docs, health-check: /health.
+
+Frontend-регрессии (Node.js 20):
+
+```sh
+cd frontend
+npm ci --registry=https://registry.npmjs.org
+npm test
+```
 
 ## Состав и ограничения
 

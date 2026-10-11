@@ -34,6 +34,8 @@ export function getStatusLabel(status: string): string {
     accepted: 'Принято',
     declined: 'Отклонено',
     expired: 'Истекло',
+    hired: 'Нанят',
+    withdrawn: 'Отозвано',
   }
   return labels[status] || status
 }
